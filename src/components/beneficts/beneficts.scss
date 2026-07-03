@@ -1,0 +1,80 @@
+.beneficts_area {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .beneficts_container {
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        color: var(--white--font);
+        background: rgba(17, 14, 13, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+
+        .section_title {
+            .title_text {
+                & h1 {
+                    color: var(--background--color3);
+                }
+
+                & p {
+                    color: var(--white--font);
+                }
+            }
+        }
+        
+        .beneficts_grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .beneficts_field {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                & i {
+                    padding: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--white--font);
+                    background: var(--i--background);
+                    border: none;
+                    border-radius: 15px;
+                    font-size: clamp(1.125rem, 0.875rem + 0.6667vw, 1.375rem);
+                    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+
+                }
+
+                .beneficts-text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    & strong {
+                        font-size: clamp(1.1875rem, 0.875rem + 0.8333vw, 1.5rem);
+                    }
+
+                    & p {
+                        font-size: clamp(1.0625rem, 0.875rem + 0.5vw, 1.25rem);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1200px) {
+    .beneficts_area {
+        .beneficts_container{
+            width: 50%;
+        }
+    }
+}

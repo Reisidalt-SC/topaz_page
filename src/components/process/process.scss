@@ -1,0 +1,87 @@
+.process_area {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #fffbee,#ffffff );
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    
+
+    .process_grid {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        .process_field {
+            padding: 10px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            color: var(--white--font);
+
+            & i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: clamp(1.875rem, 1.5625rem + 0.8333vw, 2.1875rem);
+                padding: 20px;
+                border: 2px solid var(--background--color3);
+                color: var(--red--fontHover);
+                background: var(--white--font);
+                border-radius: 50px;
+                
+            }
+
+            .process_text {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+
+                & strong {
+                    align-self: center;
+                    height: 40px;
+                    width: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                    background: var(--i--background);
+                    color: var(--white--font);
+                    border-radius: 50px;
+                }
+
+                & span {
+                    font-size: clamp(1.25rem, 0.9375rem + 0.8333vw, 1.5625rem);
+                    color: var(--black--font);
+                }
+
+                & p {
+                    font-size: clamp(1rem, 0.75rem + 0.6667vw, 1.25rem);
+                    color: var(--red--font);
+                }
+            }
+        }
+    }
+
+    .motto{
+        color: var(--black--font);
+        align-self: center;
+        font-size: clamp(1.125rem, 0.75rem + 1vw, 1.5rem);
+
+    }
+
+    & hr {
+        color: var(--background--color3);
+    }
+}
+
+@media(min-width:1200px) {
+    .process_area {
+        .process_grid {
+            flex-direction: row;
+        }
+    }
+}
